@@ -1,0 +1,443 @@
+/*
+Paleta de colores utilizada: Tanjiro Kamado
+Verde pastel oscuro: #328267
+         Gris pardo: #DCD5C2
+ Naranja muy oscuro: #2D241E
+         Rosa-rojo : #5F3F42
+        Rojo oscuro: #7A3A3A
+*/
+
+/*
+font-family: 'Bangers', cursive;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Nanum Myeongjo', serif;
+font-family: 'Alegreya', serif;
+*/
+
+/*CLASES GLOBALES*/
+.color-verde-pastel-oscuro {
+    background: #328267;
+}
+
+.color-gris-pardo {
+    background: #dcd5c2;
+}
+
+.color-rosa-rojo {
+    background: #5F3F42;
+}
+
+.color-maranja-muy-oscuro {
+    background: #2D241E;
+}
+
+.color-rojo-oscuro {
+    background: #7A3A3A;
+}
+
+.parallax {
+     /*The image used*/
+     background: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,.5)), url("../imagenes-kny/KNY-parrallax.jpg");  
+     /* Full height */
+     height: 85vh;
+     /*vh = 70 viewport height - vw = viewport width*/
+     /* Create the parallax scrolling effect */
+     background-attachment: fixed;
+     background-position: 100% 35%;
+     background-repeat: no-repeat;
+     background-size: cover;
+     animation: alternate expansion 2.5s infinite;
+  }
+
+/*INICIO*/
+body {
+    margin: 0;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Alegreya';
+    font-size: 2rem;
+    padding: 25px 0px;
+    color: #dcd5c2;
+    justify-content: center;
+}
+
+h1, p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    margin: 0;
+    padding: 20px 0px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px 20px;
+    font-family: 'IBM Plex Sans';
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: #5F3F42;
+    padding: 20px 30px;
+}
+
+/*SINOPSIS*/
+section#sinopsis h2 {
+    padding: 10px 60px;
+    text-align: center;
+    font-family:'Bangers';
+    font-size: 2rem;
+}
+
+section#sinopsis div.sip {
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+section#sinopsis div.sip p {
+    padding: 10px 40px;
+    width: 50%;
+    text-align: justify;
+    font-family: 'Nanum Myeongjo';
+}
+
+section#sinopsis div.sip img {
+    border-radius: 5%;
+}
+
+/*PERSONAJES*/
+section#personajes {
+    background-color:#328267;
+}
+
+section#personajes h2 {
+    font-family: 'Bangers';
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px 60px 0px;
+}
+
+section#personajes p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 10px;
+}
+
+section#personajes div.per p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 0px;
+}
+
+section#personajes div.per {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+section#personajes div.per img {
+    border-radius: 5%;
+}
+
+section#personajes div.per article {
+    margin: 15px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+/*PILARES*/
+section#pilares h2 {
+    font-family: 'Bangers';
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 60px 0px;
+}
+
+section#pilares p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 10px;
+}
+
+section#pilares div.pil p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 0px;
+}
+
+section#pilares div.pil {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+section#pilares div.pil img {
+    border-radius: 5%;
+}
+
+section#pilares div.pil article {
+    margin: 15px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+/*EX-PILARES*/
+section#expilares{ 
+    background-color:#328267;
+}
+
+section#expilares h2 {
+    font-family: 'Bangers';
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px 60px 0px;
+}
+
+section#expilares p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 10px;
+}
+
+section#expilares div.ex p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 0px;
+}
+
+section#expilares div.ex {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+section#expilares div.ex img {
+    border-radius: 5%;
+}
+
+section#expilares div.ex article {
+    margin: 15px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+/*DEMONIOS*/
+
+section#demonios h2 {
+    font-family: 'Bangers';
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 60px 0px;
+}
+
+section#demonios p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 10px;
+}
+
+section#demonios div.dem p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 0px;
+}
+
+section#demonios div.dem {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+}
+
+section#demonios div.dem img {
+    border-radius: 5%;
+}
+
+section#demonios div.dem article {
+    margin: 15px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    transition: all 500ms;
+}
+
+/*DONDE VERLO*/
+section#dondeverlo { 
+    background-color:#328267;
+}
+
+section#dondeverlo h2 {
+    font-family: 'Bangers';
+    font-size: 2rem;
+    text-align: center;
+    padding: 30px 60px 0px;
+}
+
+section#dondeverlo p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 10px;
+}
+
+section#dondeverlo div.dv a{
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    padding: 20px 40px;
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 0px;
+    text-decoration: none;
+    color: #dcd5c2;
+}
+
+section#dondeverlo a:hover {
+    font-size: 150%;
+}
+
+/*GALLERY*/
+section#galeria h2 {
+    font-family: 'Bangers';
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 60px 0px;
+}
+
+section#galeria p {
+    font-family: 'Nanum Myeongjo';
+    padding: 0px 10px 15px;
+    text-align: center;
+}
+
+section#galeria img {
+    transition: all 300ms;
+    width: 400px;
+    padding: 20px;
+}
+
+section#galeria img:hover {
+    transform: scale3d(1.5, 1.5, 1.5) rotateZ( 360deg) translateZ(30px);
+}
+
+/*CONTACTAME*/
+section#contactame h2 {
+    font-family: 'Bangers';
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 60px 0px;
+    color: #fff;
+}
+
+section#contactame p {
+    color: #fff;
+    text-align: center;
+}
+
+section#contactame p {
+    font-family: 'Nanum Myeongjo';
+    padding: 10px 10px;
+}
+
+section#contact-me {
+    height: 85%;
+}
+
+section#cantactame form label {
+    color: #dcd5c2;
+}
+
+section#contactame form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+section#cantactame form input,
+section#contactame form textarea {
+    border: 1px solid;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+section#contactame form * {
+    background: transparent;
+    color: #dcd5c2;
+}
+
+section#contactame form button {
+    cursor: pointer;
+    border: none;
+    background-color: #2D241E;
+    padding: 15px 30px;
+    transition: all 300ms;
+    font-size: 1.15rem;
+}
+
+section#contactame form button:hover {
+    background: #2D241E;
+}
+
+/*FOOTER*/
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    background: #7A3A3A;
+    padding: 10px 0;
+}
+
+footer div.foo {
+    padding: 5px 0px;
+}
+
+footer div.foo a,
+footer div.foo p {
+    text-decoration: none;
+    color: #dcd5c2;
+}
+
+footer div.foo a:hover {
+    font-size: 80%;
+}
+
+/*BOTON FLOTANTE*/
+a#botonflotante {
+    cursor: pointer;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border: none;
+    border-radius: 75%;
+    font-size: 3rem;
+    background: #5F3F42;
+    color: #dcd5c2;
+    padding: 10px 15px;
+    transition: all 300ms;
+}
+
+a#botonflotante:hover {
+    background: #dcd5c2;
+    color: #5F3F42;
+    transform: scale(1.3);
+}
